@@ -1,4 +1,4 @@
-package com.hoony.dagger2simpleexample3
+package com.hoony.dagger2simpleexample3.chaper2
 
 import javax.inject.Inject
 

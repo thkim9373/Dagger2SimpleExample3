@@ -1,11 +1,12 @@
-package com.hoony.dagger2simpleexample3
+package com.hoony.dagger2simpleexample3.chaper1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hoony.dagger2simpleexample3.R
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
-class MainActivity : AppCompatActivity() {
+class Chapter1Activity : AppCompatActivity() {
 
     @Inject
     lateinit var info: Info
