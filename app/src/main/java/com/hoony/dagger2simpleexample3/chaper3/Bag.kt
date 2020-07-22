@@ -5,7 +5,9 @@ import dagger.Provides
 
 @Module
 class Bag {
-    @Provides
-    open fun sayLoveDagger2(): Info =
-        Info("Love Dagger2")
+    @Provides @Named("Love")
+    fun sayLoveDagger2(): Info = Info("Love Dagger2")
+
+    @Provides @Named("Hello")
+    fun sayHelloDagger2(): Info = Info("Hello Dagger2")
 }
