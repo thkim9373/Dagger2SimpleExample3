@@ -5,4 +5,8 @@ import javax.inject.Qualifier
 @Qualifier
 @MustBeDocumented
 @kotlin.annotation.Retention(AnnotationRetention.RUNTIME)
-annotation class NamedKt(val value: String = "")
+annotation class Named(val value: Name = Name.LOVE) {
+    enum class Name {
+        LOVE, HELLO
+    }
+}

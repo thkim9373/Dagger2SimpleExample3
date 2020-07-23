@@ -9,12 +9,17 @@ import javax.inject.Inject
 class Chapter3Activity : AppCompatActivity() {
 
     @Inject
-    lateinit var info: Info
+    @field:Named(Named.Name.LOVE)
+    lateinit var infoLove: Info
+
+    @Inject
+    @field:Named(Named.Name.HELLO)
+    lateinit var infoHello: Info
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         DaggerMagicBox.create().poke(this)
-        tvText.text = info.text
+        tvText.text = "${infoLove.text}\n\n${infoHello.text}"
     }
 }
