@@ -19,6 +19,7 @@
         <activity android:name=".chaper1.Chapter1Activity" />
         <activity android:name=".chaper2.Chapter2Activity" />
         <activity android:name=".chaper3.Chapter3Activity" />
+        <activity android:name=".chaper4.Chapter4Activity" />
     </application>
 
 </manifest>
