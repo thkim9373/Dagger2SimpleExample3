@@ -24,8 +24,14 @@ class TestMainActivity {
     lateinit var infoHello: Info
 
     @Before
-    fun setup() {}
+    fun setup() {
+        DaggerTestMagicDaggerTestMagicBox
+            .builder().bag(TestBag()).build().poke(this)
+    }
 
     @Test
-    fun simpleTest() {}
+    fun simpleTest() {
+        assertEquals("Test Love", infoLove.text)
+        assertEquals("Hello Dagger 2", infoHello.text)
+    }
 }
