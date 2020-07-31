@@ -1,7 +1,7 @@
 package com.hoony.dagger2simpleexample3
 
-import com.hoony.dagger2simpleexample3.chaper4.Choose
-import com.hoony.dagger2simpleexample3.chaper4.Info
+import com.hoony.dagger2simpleexample3.chaper4.*
+import dagger.Component
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -25,8 +25,7 @@ class TestMainActivity {
 
     @Before
     fun setup() {
-        DaggerTestMagicDaggerTestMagicBox
-            .builder().bag(TestBag()).build().poke(this)
+        DaggerTestMagicBox.builder().bag(TestBag()).build().poke(this)
     }
 
     @Test
@@ -34,4 +33,13 @@ class TestMainActivity {
         assertEquals("Test Love", infoLove.text)
         assertEquals("Hello Dagger 2", infoHello.text)
     }
+}
+
+class TestBag : Bag() {
+    override fun sayLoveDagger2(): Info = Info("Test Love")
+}
+
+@Component(modules = [Bag::class])
+interface TestMagicBox : MagicBox {
+    fun poke(app: TestMainActivity)
 }
