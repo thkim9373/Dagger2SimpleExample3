@@ -8,6 +8,7 @@ import com.hoony.dagger2simpleexample3.R
 import com.hoony.dagger2simpleexample3.chaper1.Chapter1Activity
 import com.hoony.dagger2simpleexample3.chaper2.Chapter2Activity
 import com.hoony.dagger2simpleexample3.chaper3.Chapter3Activity
+import com.hoony.dagger2simpleexample3.chaper4.Chapter4Activity
 import kotlinx.android.synthetic.main.activity_list.*
 
 class ListActivity : AppCompatActivity() {
@@ -24,6 +25,10 @@ class ListActivity : AppCompatActivity() {
         TargetActivity(
             "3. Qualifier",
             Chapter3Activity::class.java
+        ),
+        TargetActivity(
+            "4. Scope",
+            Chapter4Activity::class.java
         )
     )
 

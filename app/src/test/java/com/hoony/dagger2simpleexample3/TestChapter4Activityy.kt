@@ -1,11 +1,13 @@
 package com.hoony.dagger2simpleexample3
 
-import com.hoony.dagger2simpleexample3.chaper4.*
+import com.hoony.dagger2simpleexample3.chaper4.Bag
+import com.hoony.dagger2simpleexample3.chaper4.Choose
+import com.hoony.dagger2simpleexample3.chaper4.Info
+import com.hoony.dagger2simpleexample3.chaper4.MagicBox
 import dagger.Component
-import org.junit.Test
-
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.Before
+import org.junit.Test
 import javax.inject.Inject
 
 /**
@@ -13,7 +15,7 @@ import javax.inject.Inject
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
-class TestMainActivity {
+class TestChapter4Activity {
 
     @Inject
     @field:Choose(Choose.Name.LOVE)
@@ -41,5 +43,5 @@ class TestBag : Bag() {
 
 @Component(modules = [Bag::class])
 interface TestMagicBox : MagicBox {
-    fun poke(app: TestMainActivity)
+    fun poke(app: TestChapter4Activity)
 }
