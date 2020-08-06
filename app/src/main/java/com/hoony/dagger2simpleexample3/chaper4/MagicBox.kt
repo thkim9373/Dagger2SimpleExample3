@@ -2,7 +2,8 @@ package com.hoony.dagger2simpleexample3.chaper4
 
 import dagger.Component
 
-@Component(modules = [Bag::class])
+@MagicScope
+@Component
 interface MagicBox {
-    fun poke(app: Chapter4Activity)
+    fun poke(storage: Storage)
 }
