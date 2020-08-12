@@ -6,4 +6,5 @@ import javax.inject.Singleton
 @Singleton
 @Component
 interface SingletonBox {
+    fun getMagicBox(): MagicBox
 }
