@@ -8,12 +8,14 @@ import kotlinx.android.synthetic.main.activity_scope.*
 
 class Chapter5Activity : AppCompatActivity() {
 
+    private lateinit var mainBox: SingletonBox
     private lateinit var magicBox: MagicBox
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_scope)
-        magicBox = DaggerMagicBox.create()
+        mainBox = DaggerSingletonBox.create()
+        magicBox = mainBox.getMagicBox()
 
         btCreate.setOnClickListener {
             val storage = Storage()
