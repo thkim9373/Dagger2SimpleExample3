@@ -20,8 +20,12 @@ class Chapter5Activity : AppCompatActivity() {
         btCreate.setOnClickListener {
             val storage = Storage()
             magicBox.poke(storage)
-            tvText.text = "Unique ${storage.uniqueMagic}\n" +
+            // then print all the member created in the Storage
+            // to show if they are new or existing
+            tvText.text = "Singleton ${storage.singletonOne}\n" +
+                    "Unique ${storage.uniqueMagic}\n" +
                     "Normal ${storage.normalMagic}"
+
         }
     }
 }
