@@ -16,12 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".chaper1.Chapter1Activity" />
-        <activity android:name=".chaper2.Chapter2Activity" />
-        <activity android:name=".chaper3.Chapter3Activity" />
-        <activity android:name=".chaper4.Chapter5Activity" />
+        <activity android:name=".chapter1.Chapter1Activity" />
+        <activity android:name=".chapter2.Chapter2Activity" />
+        <activity android:name=".chapter3.Chapter3Activity" />
+        <activity android:name=".chapter4.Chapter5Activity" />
         <activity android:name=".chapter5.Chapter5Activity" />
-        <activity android:name=".chaper5.Chapter5Activity" />
+        <activity android:name=".chapter5.Chapter5Activity" />
+        <activity android:name=".chapter6.Chapter6Activity" />
     </application>
 
 </manifest>

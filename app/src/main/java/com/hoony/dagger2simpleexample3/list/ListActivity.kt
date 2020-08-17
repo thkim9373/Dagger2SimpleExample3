@@ -5,11 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hoony.dagger2simpleexample3.R
-import com.hoony.dagger2simpleexample3.chaper1.Chapter1Activity
-import com.hoony.dagger2simpleexample3.chaper2.Chapter2Activity
-import com.hoony.dagger2simpleexample3.chaper3.Chapter3Activity
-import com.hoony.dagger2simpleexample3.chaper4.Chapter4Activity
-import com.hoony.dagger2simpleexample3.chaper5.Chapter5Activity
+import com.hoony.dagger2simpleexample3.chapter1.Chapter1Activity
+import com.hoony.dagger2simpleexample3.chapter2.Chapter2Activity
+import com.hoony.dagger2simpleexample3.chapter3.Chapter3Activity
+import com.hoony.dagger2simpleexample3.chapter4.Chapter4Activity
+import com.hoony.dagger2simpleexample3.chapter5.Chapter5Activity
+import com.hoony.dagger2simpleexample3.chapter6.Chapter6Activity
 import kotlinx.android.synthetic.main.activity_list.*
 
 class ListActivity : AppCompatActivity() {
@@ -34,6 +35,10 @@ class ListActivity : AppCompatActivity() {
         TargetActivity(
             "5. Subcomponent",
             Chapter5Activity::class.java
+        ),
+        TargetActivity(
+            "6. View model",
+            Chapter6Activity::class.java
         )
     )
 

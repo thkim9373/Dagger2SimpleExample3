@@ -1,9 +1,9 @@
 package com.hoony.dagger2simpleexample3
 
-import com.hoony.dagger2simpleexample3.chaper4.Bag
-import com.hoony.dagger2simpleexample3.chaper4.Choose
-import com.hoony.dagger2simpleexample3.chaper4.Info
-import com.hoony.dagger2simpleexample3.chaper4.MagicBox
+import com.hoony.dagger2simpleexample3.chapter4.Bag
+import com.hoony.dagger2simpleexample3.chapter4.Choose
+import com.hoony.dagger2simpleexample3.chapter4.Info
+import com.hoony.dagger2simpleexample3.chapter4.MagicBox
 import dagger.Component
 import org.junit.Assert.assertEquals
 import org.junit.Before
