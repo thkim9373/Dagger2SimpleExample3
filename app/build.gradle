@@ -42,4 +42,8 @@ dependencies {
     implementation "com.google.dagger:dagger-android:$dagger2_version"
     implementation "com.google.dagger:dagger-android-support:$dagger2_version"
     annotationProcessor "com.google.dagger:dagger-android-processor:$dagger2_version"
+
+    implementation "android.arch.lifecycle:extensions:$arch_version"
+    annotationProcessor "android.arch.lifecycle:compiler:$arch_version"
+    testImplementation "android.arch.core:core-testing:$arch_version"
 }
